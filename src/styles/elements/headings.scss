@@ -10,13 +10,17 @@ h5,
 h6 {
     font-family: var(--font-secondary);
     line-height: 1.1;
-    font-weight: bold;
     margin: 0;
 }
 
 h1 {
+    font-family: var(--font-primary);
     font-size: var(--font-size-h1);
+    font-weight: 400;
     line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    
 }
 
 h2 {
