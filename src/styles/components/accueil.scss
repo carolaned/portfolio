@@ -1,10 +1,33 @@
-.accueil{
-    .hero{
+.accueil {
+    height: 90vh;
+    .hero {
         position: relative;
-    }
-    h1{
         position: absolute;
-        left: 774px;
-        top: 315px;
+        left: 40%;
+        top: 30%;
+    }
+    h1 {
+        font-size: 72px;
+    }
+    p {
+        margin: 0 0 0 85px;
+        font-size: 2rem;
+        line-height: 116%;
+    }
+    button {
+        color: var(--color-white);
+        margin: 65px 200px;
+        padding: 8px 30px;
+        border: 2px solid var(--color-secondary);
+        background-color: var(--color-primary);
+
+        font-family: var(--font-primary);
+        font-size: var(--font-size-button);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            background-color: var(--color-secondary);
+        }
     }
 }
