@@ -1,56 +1,69 @@
 {% include '_partials/_header.html' %}
 
-<div class="hero">
-    <img src="assets/propos.png" alt="Ma photo" />
-    <div class="hero_contenu">
-        <h1>Carolane Dupont</h1>
-        <p>
-            Je suis intéressée par le développement web. Je fais un peu de Javascript, mais ma partie préféré est le
-            HTML et le CSS. J’aime refaire le design de façon identique. Avec moi, il faut que ça arrive pile poil.
-        </p>
-        <a href="#">Me contacter</a>
+<div class="propos">
+    <div class="hero">
+        <img src="assets/propos.png" alt="Ma photo" />
+        <div class="hero_content">
+            <h1>Carolane Dupont</h1>
+            <p>
+                Je suis intéressée par le <span>développement web</span>. Je fais un peu de <span>Javascript</span>,
+                mais ma partie préféré est le <span>HTML</span> et le <span>CSS</span>. J’aime refaire le design de
+                façon identique. Avec moi, il faut que ça arrive pile poil.
+            </p>
+            <a href="#">Me contacter</a>
+        </div>
     </div>
+
+    <div class="wrapper">
+        <section class="qualities">
+            <h2>Qualités</h2>
+            <div class="qualities_container">
+                <article>
+                    <h3>Méticuleuse</h3>
+                    <p>
+                        Que ce soit dans mes projets ou ceux des autres, je sais lorsque quelque chose ne fonctionne pas
+                        et j’essaie toujours de le régler, même si ce n’est pas un gros problème.
+                    </p>
+                </article>
+                <article>
+                    <h3>Tenace</h3>
+                    <p>Tant que je n’ai pas atteint mon objectif, je m’y tiens et je m’arrange pour le finir.</p>
+                </article>
+                <article>
+                    <h3>Méthodique</h3>
+                    <p>
+                        Dans tout ce que je fais, je garde une structure. Même si je peux paraître désordonnée, je sais
+                        me retrouver.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="logiciels">
+            <h2>Logiciels</h2>
+            <div class="logiciels_container">
+                <article><img src="assets/logos/vscode.png" alt="VSCode" /></article>
+                <article><img src="assets/logos/figma.png" alt="Figma" /></article>
+                <article><img src="assets/logos/webstorm.png" alt="Webstorm" /></article>
+                <article><img src="assets/logos/github.png" alt="Github" /></article>
+            </div>
+        </section>
+
+        <section class="langages">
+            <h2>Langages</h2>
+            <div class="langages_container">
+                <article><img src="assets/logos/css.png" alt="CSS" /></article>
+                <article><img src="assets/logos/html.png" alt="HTML" /></article>
+                <article><img src="assets/logos/js.png" alt="JavaScript" /></article>
+            </div>
+        </section>
+
+        <section class="video">
+            <h2>Présentation en vidéo</h2>
+            <!-- video -->
+        </section>
+    </div>
+    <img class="plante vine1" src="assets/plantes/vine1.png" alt="plante" />
+    <img class="plante vine2" src="assets/plantes/vine2.png" alt="plante" />
 </div>
-
-<section class="qualites">
-    <h2>Qualités</h2>
-    <article>
-        <h3>Méticuleuse</h3>
-        <p>
-            Que ce soit dans mes projets ou ceux des autres, je sais lorsque quelque chose ne fonctionne pas et j’essaie
-            toujours de le régler, même si ce n’est pas un gros problème.
-        </p>
-    </article>
-    <article>
-        <h3>Tenace</h3>
-        <p>Tant que je n’ai pas atteint mon objectif, je m’y tiens et je m’arrange pour le finir.</p>
-    </article>
-    <article>
-        <h3>Méthodique</h3>
-        <p>
-            Dans tout ce que je fais, je garde une structure. Même si je peux paraître désordonnée, je sais me
-            retrouver.
-        </p>
-    </article>
-</section>
-
-<section class="logiciels">
-    <article><img src="" alt="VSCode" /></article>
-    <article><img src="" alt="Figma" /></article>
-    <article><img src="" alt="Webstorm" /></article>
-    <article><img src="" alt="Github" /></article>
-</section>
-
-<section class="langages">
-    <article><img src="" alt="CSS" /></article>
-    <article><img src="" alt="HTML" /></article>
-    <article><img src="" alt="JavaScript" /></article>
-    <!-- ajouter -->
-</section>
-
-<section class="video">
-    <h2>Présentation en vidéo</h2>
-    <!-- video -->
-</section>
-
 {% include '_partials/_footer.html' %}

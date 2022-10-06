@@ -27,7 +27,12 @@ h2 {
 }
 
 h3 {
+    font-family: var(--font-secondary);
     font-size: var(--font-size-h3);
+    font-weight: 300;
+    letter-spacing: 0.2em;
+    text-decoration: underline;
+    color: var(--color-tertiary);
 }
 
 h4 {
