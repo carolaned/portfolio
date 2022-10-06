@@ -1,45 +1,47 @@
 {% include '_partials/_header.html' with { title: 'Contact' } %}
 
 <div class="contact">
-    <h1>Contact</h1>
-    <div class="container">
-        <form action="">
-            <div class="form__body">
-                <fieldset class="container">
-                    <div class="input">
-                        <label class="input__label" for="name">Nom</label>
-                        <input class="input__element" type="text" name="name" id="name" placeholder="" required />
+    <div class="wrapper">
+        <h1>Contact</h1>
+        <div class="container">
+            <form action="">
+                <div class="form_body">
+                    <fieldset class="form_container">
+                        <div class="input">
+                            <label class="input_label" for="name">Nom</label>
+                            <input class="input_element" type="text" name="name" id="name" placeholder="" required />
+                        </div>
+                        <div class="input">
+                            <label class="input_label" for="email">Courriel</label>
+                            <input class="input_element" type="email" name="email" id="email" placeholder="" required />
+                        </div>
+                        <div class="input textarea u-grid-fullwidth">
+                            <label class="input_label" for="comment">Commentaire</label>
+                            <textarea class="input_element" name="comment" id="comment"></textarea>
+                        </div>
+                    </fieldset>
+                    <div class="form_footer">
+                        <button class="button">Envoyer</button>
                     </div>
-                    <div class="input">
-                        <label class="input__label" for="email">Courriel</label>
-                        <input class="input__element" type="email" name="email" id="email" placeholder="" required />
-                    </div>
-                    <div class="input textarea u-grid-fullwidth">
-                        <label class="input__label" for="comment">Description <span>(facultatif)</span></label>
-                        <textarea class="input__element" name="comment" id="comment"></textarea>
-                    </div>
-                </fieldset>
-                <div class="form__footer">
-                    <button class="button">Envoyer</button>
                 </div>
-            </div>
 
-            <div class="form__confirmation">
-                <h2>Merci</h2>
-                <p>Votre formulaire a été envoyé.</p>
-            </div>
-        </form>
+                <div class="form_confirmation">
+                    <h2>Merci</h2>
+                    <p>Votre formulaire a été envoyé.</p>
+                </div>
+            </form>
 
-        <div class="infos">
-            <div class="courriel">
-                <h4>Courriel</h4>
-                <a href="mailto:carolanedupont@hotmail.com">carolanedupont@hotmail.com</a>
+            <div class="infos">
+                <div class="courriel">
+                    <h4>Courriel</h4>
+                    <a href="mailto:carolanedupont@hotmail.com">carolanedupont@hotmail.com</a>
+                </div>
+                <div class="telephone">
+                    <h4>Téléphone</h4>
+                    <a href="tel:514-424-3357">514-424-3357</a>
+                </div>
+                <a class="button_cv" href="pdf/carolane_dupont_CV.pdf" target="_blank">Mon CV</a>
             </div>
-            <div class="telephone">
-                <h4>Téléphone</h4>
-                <a href="tel:514-424-3357">514-424-3357</a>
-            </div>
-            <a href="pdf/carolane_dupont_CV.pdf" target="_blank">Mon CV</a>
         </div>
     </div>
     <img class="plante plante4" src="assets/plantes/plante4.png" alt="plante" />
