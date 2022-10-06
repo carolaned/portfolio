@@ -21,6 +21,8 @@
                 rgba(221, 212, 205, 1) 0%,
                 rgba(250, 250, 250, 1) 100%
             );
+            outline: 1px solid var(--color-primary);
+            outline-offset: -10px;
         }
         .hero_content {
             margin-left: 90px;
@@ -74,6 +76,8 @@
                 );
                 max-width: 400px;
                 padding: 50px 50px;
+                outline: 1px solid var(--color-primary);
+                outline-offset: -10px;
                 text-align: center;
                 color: var(--color-tertiary);
                 line-height: 1.16em;
@@ -119,5 +123,18 @@
         top: 540px;
         left: -15px;
         z-index: -1;
+    }
+
+    .plante5 {
+        position: absolute;
+        top: 1600px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .plante6 {
+        position: absolute;
+        top: 2000px;
+        right: 0;
     }
 }

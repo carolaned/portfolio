@@ -10,13 +10,16 @@
     }
     .container {
         margin-top: 100px;
+        article:first-child {
+            margin-top: 100px;
+        }
     }
     article {
         width: 1350px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 100px 0;
+        margin: 200px 0;
         img {
             border: 10px solid;
             border-image-slice: 1;
@@ -58,5 +61,6 @@
         position: absolute;
         top: 1880px;
         left: 0;
+        z-index: -1;
     }
 }
