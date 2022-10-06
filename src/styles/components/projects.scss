@@ -1,0 +1,62 @@
+.projects {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+        position: absolute;
+        top: 60px;
+        right: 300px;
+    }
+    .container {
+        margin-top: 100px;
+    }
+    article {
+        width: 1350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 100px 0;
+        img {
+            border: 10px solid;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(
+                135deg,
+                rgba(221, 212, 205, 1) 0%,
+                rgba(250, 250, 250, 1) 100%
+            );
+        }
+    }
+    a {
+        display: inline-block;
+        color: var(--color-white);
+        margin-top: 14px;
+        padding: 2px 30px;
+        border: 2px solid var(--color-secondary);
+        background-color: var(--color-primary);
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+
+        font-family: var(--font-primary);
+        font-size: var(--font-size-button);
+        font-weight: 700;
+        text-transform: uppercase;
+
+        &:hover {
+            background: var(--color-secondary);
+            -webkit-background-clip: inherit;
+            -webkit-text-fill-color: var(--color-white);
+        }
+    }
+
+    .plante2 {
+        position: absolute;
+        top: 1000px;
+        right: 0;
+    }
+
+    .plante3 {
+        position: absolute;
+        top: 1880px;
+        left: 0;
+    }
+}

@@ -1,42 +1,51 @@
 {% include '_partials/_header.html' with { title: 'Mes projets' } %}
 
-<section>
+<section class="projects">
     <h1>Mes projets</h1>
-    <article>
-        <div class="acticle_contenu">
-            <h2>Cinetim</h2>
-            <p>Programmation d’interactivité d’un site web</p>
-            <a class="project_link" href="#">Voir le projet</a>
-        </div>
-    </article>
-    <article>
-        <div class="acticle_contenu">
-            <h2>Motion Design</h2>
-            <p>Conception d’un site web</p>
-            <a class="project_link" href="#">Voir le projet</a>
-        </div>
-    </article>
-    <article>
-        <div class="acticle_contenu">
-            <h2>Recette en pot</h2>
-            <p>Refonte d’un site web</p>
-            <a class="project_link" href="#">Voir le projet</a>
-        </div>
-    </article>
-    <article>
-        <div class="acticle_contenu">
-            <h2>CryptoQC</h2>
-            <p>Integration web d’un design</p>
-            <a class="project_link" href="#">Voir le projet</a>
-        </div>
-    </article>
-    <article>
-        <div class="acticle_contenu">
-            <h2></h2>
-            <p></p>
-            <a class="project_link" href="#">Voir le projet</a>
-        </div>
-    </article>
+    <div class="container">
+        <article class="left">
+            <img src="assets/projets/cinetim.jpg" alt="" />
+            <div class="acticle_content">
+                <h2>Cinetim</h2>
+                <p>Programmation d’interactivité d’un site web</p>
+                <a class="project_link" href="#">Voir le projet</a>
+            </div>
+        </article>
+        <article class="right">
+            <div class="acticle_content">
+                <h2>Motion Design</h2>
+                <p>Conception d’un site web</p>
+                <a class="project_link" href="#">Voir le projet</a>
+            </div>
+            <img src="assets/projets/mood.jpg" alt="" />
+        </article>
+        <article class="left">
+            <img src="assets/projets/recette.jpg" alt="" />
+            <div class="acticle_content">
+                <h2>Recette en pot</h2>
+                <p>Refonte d’un site web</p>
+                <a class="project_link" href="#">Voir le projet</a>
+            </div>
+        </article>
+        <article class="right">
+            <div class="acticle_content">
+                <h2>CryptoQC</h2>
+                <p>Integration web d’un design</p>
+                <a class="project_link" href="#">Voir le projet</a>
+            </div>
+            <img src="assets/projets/crypto.jpg" alt="" />
+        </article>
+        <article class="left">
+            <img src="assets/projets/" alt="" />
+            <div class="acticle_content">
+                <h2></h2>
+                <p></p>
+                <a class="project_link" href="#">Voir le projet</a>
+            </div>
+        </article>
+    </div>
+    <img class="plante plante2" src="assets/plantes/plante2.png" alt="plante" />
+    <img class="plante plante3" src="assets/plantes/plante3.png" alt="plante" />
 </section>
 
 {% include '_partials/_footer.html' %}

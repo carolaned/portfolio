@@ -10,5 +10,8 @@ body {
     font-weight: 200;
     color: var(--color-white);
     line-height: 1.6;
-    background-image: url('../assets/bg.jpg');
+    background: url('../assets/bg.jpg') no-repeat fixed;
+    back p {
+        margin: 0;
+    }
 }
