@@ -34,6 +34,15 @@
     .avant_plan {
         position: absolute;
         bottom: 0;
-        right: 28%;
+        left: 1%;
+    }
+
+    @media screen and (max-width: 1420px) {
+        h1 {
+            font-size: var(--font-size-h2);
+            .avant_plan {
+                max-width: 1000px;
+            }
+        }
     }
 }

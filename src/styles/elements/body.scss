@@ -11,6 +11,9 @@ body {
     color: var(--color-white);
     line-height: 1.6;
     background: url('../assets/bg.jpg') no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+
     back p {
         margin: 0;
     }
