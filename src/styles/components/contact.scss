@@ -1,2 +1,25 @@
-.contact{
+.contact {
+    .container {
+        display: flex;
+    }
+
+    .infos {
+        div {
+            display: flex;
+            h4 {
+                text-align: right;
+            }
+            a {
+                margin-left: 30px;
+                font-weight: 700;
+
+                text-align: left;
+            }
+        }
+        .courriel {
+            h4 {
+                margin-left: 27px;
+            }
+        }
+    }
 }
