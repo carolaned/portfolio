@@ -1,0 +1,109 @@
+.single_recettes {
+    .wrapper {
+        max-width: 1680px;
+    }
+    h1 {
+        margin: 100px 0;
+        text-align: right;
+    }
+
+    article {
+        position: relative;
+        background: linear-gradient(
+            135deg,
+            rgba(221, 212, 205, 1) 0%,
+            rgba(250, 250, 250, 1) 100%
+        );
+        height: 780px;
+        margin: 300px 0;
+        outline: 1px solid var(--color-primary);
+        outline-offset: -10px;
+        color: var(--color-tertiary);
+        line-height: 1.16em;
+        .mockup {
+            position: absolute;
+            top: -200px;
+            left: 30px;
+        }
+
+        .mockup2 {
+            border: 1px solid var(--color-primary);
+            margin: 10px 0 10px 10px;
+            position: absolute;
+            top: 0;
+            right: 500px;
+        }
+        .mockup3 {
+            border: 1px solid var(--color-primary);
+            margin: 10px 0 10px 10px;
+            position: absolute;
+            bottom: 0;
+            right: 70px;
+        }
+        p {
+            position: absolute;
+            bottom: 100px;
+            left: 50px;
+            max-width: 680px;
+        }
+    }
+
+    .screenshot {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .structure {
+        position: absolute;
+        top: 200px;
+        left: 100px;
+        text-align: right;
+        max-width: 520px;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .css {
+        position: absolute;
+        top: -100px;
+        left: 770px;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .html {
+        margin: 1400px 0 100px;
+        text-align: right;
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+
+    .plante8 {
+        position: absolute;
+        top: 400px;
+        right: 0;
+        z-index: 1;
+    }
+    .vine3 {
+        position: absolute;
+        top: 1300px;
+        left: 0;
+    }
+    .plante6 {
+        position: absolute;
+        top: 2300px;
+        right: 0;
+        z-index: 1;
+    }
+    .plante5 {
+        position: absolute;
+        top: 3100px;
+        left: 0;
+        z-index: 1;
+    }
+}
