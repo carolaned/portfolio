@@ -59,6 +59,57 @@
         left: 0;
     }
 
+    @media screen and (max-width: 1366px) {
+        .container {
+            flex-direction: column;
+        }
+        .infos {
+            margin: 0 0 50px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .button_cv {
+                margin-left: 0;
+            }
+        }
+        .plante {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        h1 {
+            font-size: 3.5rem;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .infos {
+            margin-bottom: 80px;
+            div {
+                flex-direction: column;
+                align-items: center;
+            }
+            .courriel {
+                h4 {
+                    margin-left: 0;
+                }
+                a {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        fieldset {
+            .input_element {
+                width: 350px;
+                height: 80px;
+            }
+        }
+    }
+
     /* ==========================================================================
    formulaire
    ========================================================================== */

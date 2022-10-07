@@ -50,6 +50,12 @@
             -webkit-text-fill-color: var(--color-white);
         }
     }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+    }
 
     .plante2 {
         position: absolute;
@@ -62,5 +68,96 @@
         top: 2200px;
         left: 0;
         z-index: -1;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+        .container {
+            margin-top: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            top: 50px;
+            right: 30px;
+        }
+        article {
+            max-width: 728px;
+            flex-direction: column;
+            margin: 200px 0;
+
+            img {
+                max-width: 500px;
+                height: auto;
+                border: 5px solid;
+            }
+            h2 {
+                margin-top: 30px;
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+            p {
+                margin: 8px 0;
+                line-height: normal;
+            }
+            a {
+                margin: 0 0;
+                font-size: 1.5rem;
+            }
+        }
+        .mobile {
+            display: flex;
+        }
+        .desktop {
+            display: none;
+        }
+
+        .plante2,
+        .plante3 {
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        .container {
+            margin-top: 40px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            top: 50px;
+            right: 30px;
+        }
+        article {
+            max-width: 335px;
+            flex-direction: column;
+            margin: 100px 0;
+            img {
+                border: 5px solid;
+                max-width: 335px;
+            }
+            h2 {
+                margin-top: 30px;
+                font-size: 2.5rem;
+                font-weight: 300;
+            }
+            p {
+                margin: 8px 0;
+                line-height: normal;
+            }
+            a {
+                margin: 0 0;
+                font-size: 1.5rem;
+            }
+        }
+
+        .mobile {
+            display: flex;
+        }
+        .desktop {
+            display: none;
+        }
+
+        .plante2,
+        .plante3 {
+            display: none;
+        }
     }
 }

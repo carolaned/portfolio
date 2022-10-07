@@ -17,4 +17,8 @@ body {
     back p {
         margin: 0;
     }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        background: url('../assets/bg-xs.jpg') no-repeat fixed;
+    }
 }

@@ -25,6 +25,46 @@ header {
             font-weight: 300;
         }
     }
+
+    .mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 1366px) {
+        padding: 12px 30px;
+        .desktop {
+            display: none;
+            /*text-align: center;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 30px;
+            transform: translateY(-130%);*/
+
+            .nav-is-active & {
+                transform: translateY(100px);
+            }
+        }
+        .mobile {
+            display: block;
+            .icon {
+                font-size: 2rem;
+                color: var(--color-white);
+            }
+        }
+    }
+
+    /*@media screen and (max-width: $breakpoint-xs) {
+        padding: 12px 30px;
+        .desktop {
+            display: none;
+        }
+        .mobile {
+            display: inline;
+        }
+    }*/
 }
 
 /*de base - pour js*/

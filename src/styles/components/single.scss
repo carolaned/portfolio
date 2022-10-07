@@ -106,4 +106,137 @@
         left: 0;
         z-index: 1;
     }
+
+    @media screen and (max-width: 1366px) {
+        h1 {
+            margin: 60px 0;
+            font-size: 2.5rem;
+            text-align: right;
+        }
+
+        article {
+            height: 520px;
+            margin: 80px 0;
+            outline-offset: -5px;
+            img {
+                max-width: 300px;
+            }
+            .mockup {
+                top: -50px;
+                left: 30px;
+            }
+
+            .mockup2 {
+                top: -6px;
+                right: 20px;
+                max-width: 200px;
+            }
+            .mockup3 {
+                bottom: -6px;
+                left: 10px;
+                max-width: 200px;
+            }
+            p {
+                font-size: 1rem;
+                line-height: normal;
+                width: 300px;
+                bottom: 0;
+                left: 250px;
+            }
+        }
+
+        .plante {
+            display: none;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+        }
+
+        .structure {
+            top: 0;
+            left: 120px;
+            text-align: center;
+        }
+
+        .css {
+            top: 1200px;
+            left: 0;
+            text-align: center;
+        }
+
+        .html {
+            margin: 2400px 0 100px;
+            text-align: center;
+            h2 {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-xs) {
+        .wrapper {
+            margin: 0;
+        }
+        h1 {
+            margin-right: 30px;
+        }
+        article {
+            height: 520px;
+            width: 300px;
+            margin: 0;
+            img {
+                max-width: 200px;
+            }
+            .mockup {
+                top: -50px;
+                left: 90px;
+            }
+
+            .mockup2 {
+                top: 100px;
+                left: 0;
+                max-width: 130px;
+            }
+            .mockup3 {
+                top: 170px;
+                left: 145px;
+                max-width: 130px;
+            }
+            p {
+                width: 280px;
+                bottom: 0;
+                left: 12px;
+            }
+        }
+        .single_hero {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .structure {
+            top: 50px;
+            left: 0;
+            img {
+                max-width: 300px;
+            }
+        }
+
+        .css {
+            top: 1250px;
+            left: 0;
+            img {
+                max-width: 300px;
+            }
+        }
+
+        .html {
+            margin: 1900px 0 50px;
+            text-align: center;
+            img {
+                max-width: 300px;
+            }
+        }
+    }
 }
