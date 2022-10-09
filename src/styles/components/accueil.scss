@@ -1,6 +1,9 @@
+/* ==========================================================================
+   Accueil (index)
+   ========================================================================== */
 .accueil {
     position: relative;
-    height: 90vh;
+    height: 100vh;
     .hero {
         position: relative;
         position: absolute;
@@ -13,6 +16,9 @@
         line-height: 116%;
     }
     .call_action {
+        position: absolute;
+        top: 0;
+        left: 0;
         display: inline-block;
         color: var(--color-white);
         margin: 65px 200px;
@@ -36,7 +42,151 @@
         position: absolute;
         bottom: 0;
         left: 1%;
+        width: 70vw;
+        z-index: -1;
     }
+
+    .box {
+        position: relative;
+        transition: transform 0.4s cubic-bezier(0.23, 1.83, 0.42, 1.19);
+        &:hover {
+            .circle {
+                transform: scale(1.2);
+            }
+        }
+
+        /* a {
+             position: absolute;
+            top: 50%;
+            left: 50%;
+        } */
+    }
+    /* .call_action::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        content: '';
+        width: 120px;
+        height: 180px;
+        border-radius: 50%;
+        z-index: -1;
+        box-shadow: linear-gradient(
+            90deg,
+            rgba(224, 170, 62, 1) 0%,
+            rgba(255, 255, 189, 1) 30%,
+            rgba(224, 170, 62, 1) 100%
+        );
+        background: linear-gradient(
+            90deg,
+            rgba(224, 170, 62, 1) 0%,
+            rgba(255, 255, 189, 1) 30%,
+            rgba(224, 170, 62, 1) 100%
+        ); 
+
+        animation: 1s linear infinite alternate portal,
+            6s linear infinite alternate spinning,
+            0.8s linear infinite alternate big; 
+
+         &:hover {
+            transform: translate(5px 0);
+        } 
+    } */
+
+    .circle {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 120px;
+        height: 180px;
+
+        background: none;
+        border: 2px solid;
+        border-image-slice: 1;
+
+        /* background-clip: padding-box;
+        border: solid 2px transparent; */
+        border-image-source: linear-gradient(
+            90deg,
+            rgba(224, 170, 62, 1) 0%,
+            rgba(255, 255, 189, 1) 30%,
+            rgba(224, 170, 62, 1) 100%
+        );
+
+        &::before {
+            content: '';
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            /* z-index: -1;
+            margin: -2px;
+            background: linear-gradient(
+                90deg,
+                rgba(224, 170, 62, 1) 0%,
+                rgba(255, 255, 189, 1) 30%,
+                rgba(224, 170, 62, 1) 100%
+            ); */
+        }
+
+        /* border-radius: 50%;
+        box-shadow: linear-gradient(
+            90deg,
+            rgba(224, 170, 62, 1) 0%,
+            rgba(255, 255, 189, 1) 30%,
+            rgba(224, 170, 62, 1) 100%
+        );
+        background: linear-gradient(
+            90deg,
+            rgba(224, 170, 62, 1) 0%,
+            rgba(255, 255, 189, 1) 30%,
+            rgba(224, 170, 62, 1) 100%
+        ); */
+
+        /*  animation: 1s linear infinite alternate portal,
+            6s linear infinite alternate spinning,
+            0.8s linear infinite alternate big;
+
+         &:hover {
+            transform: translate(5px 0);
+        } */
+    }
+
+    @keyframes portal {
+        from {
+            box-shadow: 0 1px 2px #f4be52, 1px 0 0 #f9f295, 0 -1px 0 #f4be52,
+                -1px 0 0 #f9f295;
+        }
+        to {
+            box-shadow: 0 -1px 2px #f4be52, -1px 0 2px #f9f295,
+                0 1px 2px #f4be52, 1px 0 2px #f9f295;
+        }
+    }
+
+    @keyframes spinning {
+        from {
+            transform: rotate(315deg);
+        }
+        to {
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes big {
+        from {
+            width: 120px;
+            height: 180px;
+        }
+        to {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    /* ==========================================================================
+   Responsive
+   ========================================================================== */
 
     @media screen and (max-width: 1420px) {
         h1 {
