@@ -10,15 +10,17 @@ body {
     font-weight: 200;
     color: var(--color-white);
     line-height: 1.6;
-    background: url('../assets/bg.jpg') no-repeat fixed;
-    background-size: cover;
-    background-position: center;
 
-    back p {
-        margin: 0;
+    .background {
+        position: fixed;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -2;
+        width: 100vw;
     }
 
-    @media screen and (max-width: $breakpoint-xs) {
+    /* @media screen and (max-width: $breakpoint-xs) {
         background: url('../assets/bg-xs.jpg') no-repeat fixed;
-    }
+    } */
 }
