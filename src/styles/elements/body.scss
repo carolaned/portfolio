@@ -10,14 +10,16 @@ body {
     font-weight: 200;
     color: var(--color-white);
     line-height: 1.6;
+    background-color: #868480;
 
     .background {
         position: fixed;
         top: 0;
-        left: 0;
+        left: 50%;
         object-fit: cover;
         z-index: -2;
         width: 100vw;
+        transform: translateX(-50%);
     }
 
     /* @media screen and (max-width: $breakpoint-xs) {
