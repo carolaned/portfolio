@@ -29,8 +29,5 @@ export default class Background {
       plant[i].style.left = mouseX * 0.003 + '%';
       plant[i].style.bottom = mouseY * -0.003 + '%';
     }
-
-    /*     console.log('y = ' + mouseY);
-    console.log('x = ' + mouseX); */
   }
 }

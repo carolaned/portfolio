@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
     background-color: #868480;
 
-    .background {
+    .bg_desktop {
         position: fixed;
         top: 0;
         left: 50%;
@@ -21,8 +21,27 @@ body {
         width: 100vw;
         transform: translateX(-50%);
     }
+    .bg_mobile {
+        display: none;
+    }
 
-    /* @media screen and (max-width: $breakpoint-xs) {
-        background: url('../assets/bg-xs.jpg') no-repeat fixed;
-    } */
+    .icon {
+        stroke: var(--color-white);
+        z-index: 2;
+        font-size: 2rem;
+    }
+
+    @media screen and (max-width: 875px) {
+        .bg_desktop {
+            display: none;
+        }
+        .bg_mobile {
+            display: block;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: -2;
+            object-fit: cover;
+        }
+    }
 }

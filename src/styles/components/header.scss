@@ -10,6 +10,10 @@ header {
     justify-content: space-between;
     align-items: center;
 
+    .logo {
+        line-height: 100%;
+    }
+
     ul {
         display: flex;
         li {
@@ -74,23 +78,22 @@ header {
    Responsive
    ========================================================================== */
 
-    /* @media screen and (max-width: 1366px) {
-        padding: 12px 30px;
+    @media screen and (max-width: $breakpoint-lg) {
+        padding: 12px 50px;
+        li {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
         .desktop {
             display: none;
-            /*text-align: center;
-            flex-direction: column;
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 30px;
-            transform: translateY(-130%);*/
+        }
+        .mobile {
+            display: inline-block;
+        }
+    }
 
-    /*.nav-is-active & {
-                transform: translateY(100px);
-            }
-        } */
     /* .mobile {
             display: block;
             .icon {
@@ -98,13 +101,11 @@ header {
                 color: var(--color-white);
             }
         }
-    } */
+     */
 
     /* @media screen and (max-width: $breakpoint-xs) {
         padding: 12px 30px;
-        .desktop {
-            display: none;
-        }
+        
         .mobile {
             display: inline;
         }
